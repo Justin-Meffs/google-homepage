@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Recreation</title>
+    </head>
+        <style>
+            div.header-buttons {
+                display: grid;
+                padding-left: 10px;
+                grid-template-columns: 50px 50px 1fr 50px 50px 50px 80px 10px;
+                grid-template-rows: 50px;
+                grid-template-areas: "about store . gmail images menu sign-in";
+            }
+            #about {
+                grid-area: about;
+                justify-content: center;
+                padding-top: 15px;
+                
+            }
+            #store {
+                grid-area: store;
+                justify-content: center;
+                padding-top: 15px;
+            }
+            #gmail {
+                grid-area: gmail;
+                justify-content: center;
+                padding-top: 15px;
+            }
+            #images {
+                grid-area: images;
+                justify-content: center;
+                padding-top: 15px;
+            }
+            #menu {
+                grid-area: menu;
+                justify-content: center;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+            #sign-in {
+                grid-area: sign-in;
+                justify-content: center;
+                padding-left: 17px;
+                padding-top: 15px;
+                border:1px solid #4285f4;
+            }
+            a {
+                text-decoration: none;
+                color: darkslategrey;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+            }
+
+            div.logo {
+                text-align: center;
+                margin-top: 140px;
+            }
+            div.search-box {
+                text-align: center;
+                padding-top: 30px;
+                border: none;
+            }
+            div.main-buttons {
+                -moz-appearance: none;
+                text-align: center;
+                padding-top: 20px;
+                border: none;
+                border-radius: 2px;
+            }
+            div.footer-buttons {
+                display: grid;
+                grid-template-columns: 70px 60px 1fr 50px 50px 50px 10px;
+                grid-template-rows: 0px;
+                padding-top: 380px;
+            }
+
+        </style>
+
+        <header>   
+            <div class="header-buttons">
+                <a href="#" id="about">About</a>
+                <a href="#" id="store">Store</a>
+                <a href="#" id="gmail">Gmail</a>
+                <a href="#" id="images">Images</a>
+                <a href="#" id="menu"><img src="google-9-dots.png" height="30px" width=""></a>
+                <a href="#" id="sign-in">Sign in</a>
+            </div>
+
+        </header>
+
+        <body style="background-color: white;">
+
+            <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            </div>
+            <div class="search-box">
+                <input type="text" name="txtname" placeholder="Search or Enter URL" size="60">
+            </div>
+            <div class="main-buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+
+        </body>
+
+        <footer>
+            <div class="footer-buttons">
+                <a href="#" id="advertising">Advertising</a>
+                <a href="#" id="business">Business</a>
+                <a href="#" id="how-search-works">How Search works</a>
+                <a href="#" id="privacy">Privacy</a>
+                <a href="#" id="terms">Terms</a>
+                <a href="#" id="settings">Settings</a>
+        </footer>
+</html>
